@@ -1,0 +1,47 @@
+.Header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  border-bottom: 1px solid #ccc;
+
+  .ImageContainer {
+    width: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      height: 100%;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+
+  .InfoContainer {
+    padding: .7rem .5rem .5rem;
+
+    .UserName {
+      font-size: 12px;
+      display: block;
+      color: #777;
+      line-height: 10px;
+    }
+    .Role {
+      font-size: 13px;;
+      color: #444;
+      font-weight: bold;
+    }
+  }
+}

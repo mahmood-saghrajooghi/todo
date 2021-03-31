@@ -1,0 +1,28 @@
+.MainHeader {
+  height: 200px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+  background: #f2f3f7;
+  box-shadow: 0 10px 20px rgba(105,141,174,.2);
+  z-index: 3;
+  position: relative;
+  .HeaderBar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    .Date {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      color: #445066;
+      width: 33.33%;
+
+      span {
+        margin-left: .5rem;
+      }
+    }
+  }
+}

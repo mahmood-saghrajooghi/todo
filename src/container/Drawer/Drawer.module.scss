@@ -1,0 +1,20 @@
+.Drawer {
+  background: #f2f3f7;
+  width: 25%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow-y: auto;
+  z-index: 0;
+  position: relative;
+  overflow-x: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    height: 100%;
+    width: 20px;
+    box-shadow: 0 0 10px rgba(140, 178, 204, 0.5);
+    z-index: 1;
+  }
+}

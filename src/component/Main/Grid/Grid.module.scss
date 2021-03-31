@@ -1,0 +1,11 @@
+.Grid {
+  width: 100%;
+  height: calc(100% - 200px);
+  overflow: hidden; 
+  display: grid;
+  background: #ecf1f7;
+  grid-template-columns: repeat(7,14.5%);
+  grid-template-rows: repeat(5,1fr);
+  z-index: 2;
+  position: relative;
+}

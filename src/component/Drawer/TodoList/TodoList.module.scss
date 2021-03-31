@@ -1,0 +1,37 @@
+.TodoList {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(100, 100, 100, .3);
+
+  .ItemsContainer {
+    margin-top: 1rem;
+  }
+
+  .CompleteHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5rem;
+    flex-grow: 0;
+    font-size: 12px; 
+    color: #646879;
+    font-weight: bold;
+
+    .DownArrow {
+      background-color: #e5e6ea;
+      border-radius: 50%;
+      padding: .25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .Icon {
+        color: #87889c;
+        font-size: 12px;
+      }
+    }
+  }
+}

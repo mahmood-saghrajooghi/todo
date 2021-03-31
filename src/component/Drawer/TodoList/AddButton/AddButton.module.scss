@@ -1,0 +1,22 @@
+.AddButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem .7rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(100, 100, 100, .3);
+  border: none;
+  outline: none;
+  color: #545a70;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  .PlusIcon {
+    margin-right: .5rem;
+    background-color: #ddd;
+    color: #999;
+    padding: 4px;
+    font-size: 19px;
+    border-radius: 50%;
+  }
+}

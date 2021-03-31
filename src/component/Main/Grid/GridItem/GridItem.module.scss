@@ -1,0 +1,25 @@
+.GridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-size: 12px;
+  color: #6b6f7e;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.Todo {
+  margin-top: .5rem;
+  width: 90%;
+  padding: .5rem;
+  background: #f2f3f7;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(119, 146, 182, .37);
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}

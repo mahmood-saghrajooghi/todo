@@ -1,0 +1,16 @@
+.CurrentTime {
+  width: 33.33%;
+  text-align: center;
+  .Top {
+    font-size: 13px;
+    font-weight: bold;
+    color: #64697d;
+  }
+  .Bottom {
+    font-size: 11px;
+    color: #999ca5;
+    span {
+      margin-left: 4px;
+    }
+  }
+}

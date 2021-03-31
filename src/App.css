@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_Bold.eot");
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/iran-sans/woff2/IRANSansWeb(NoEn)_Bold.woff2") format("woff2"), url("./assets/fonts/iran-sans/woff/IRANSansWeb(NoEn)_Bold.woff") format("woff"), url("./assets/fonts/iran-sans/ttf/IRANSansWeb(NoEn)_Bold.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_Medium.eot");
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_Medium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/iran-sans/woff2/IRANSansWeb(NoEn)_Medium.woff2") format("woff2"), url("./assets/fonts/iran-sans/woff/IRANSansWeb(NoEn)_Medium.woff") format("woff"), url("./assets/fonts/iran-sans/ttf/IRANSansWeb(NoEn)_Medium.ttf") format("truetype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_Light.eot");
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_Light.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/iran-sans/woff2/IRANSansWeb(NoEn)_Light.woff2") format("woff2"), url("./assets/fonts/iran-sans/woff/IRANSansWeb(NoEn)_Light.woff") format("woff"), url("./assets/fonts/iran-sans/ttf/IRANSansWeb(NoEn)_Light.ttf") format("truetype");
 }
 
-.App-header {
-  background-color: #282c34;
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_UltraLight.eot");
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn)_UltraLight.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/iran-sans/woff2/IRANSansWeb(NoEn)_UltraLight.woff2") format("woff2"), url("./assets/fonts/iran-sans/woff/IRANSansWeb(NoEn)_UltraLight.woff") format("woff"), url("./assets/fonts/iran-sans/ttf/IRANSansWeb(NoEn)_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn).eot");
+  src: url("./assets/fonts/iran-sans/eot/IRANSansWeb(NoEn).eot?#iefix") format("embedded-opentype"), url("./assets/fonts/iran-sans/woff2/IRANSansWeb(NoEn).woff2") format("woff2"), url("./assets/fonts/iran-sans/woff/IRANSansWeb(NoEn).woff") format("woff"), url("./assets/fonts/iran-sans/ttf/IRANSansWeb(NoEn).ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DYekan";
+  src: local("â˜º"), url("./assets/fonts/dyekan/DimaYekanWeb.woff") format("woff"), url("./assets/fonts/dyekan/DimaYekanWeb.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DYekan";
+  src: local("â˜º"), url("./assets/fonts/dyekan/DimaYekanWebBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
   min-height: 100vh;
+}
+
+.wrapper {
+  background-color: #d8e5ee;
+  padding: .5rem;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.container {
+  /* background-color: red; */
+  box-shadow: 0 0 30px rgba(157, 168, 201, 0.5);
+  padding: .5rem;
+  border-radius: 20px;
+  max-width: 1333px;
+  margin: auto;
+  height: 80%;
+  display: flex;
+  flex-grow: 1;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
